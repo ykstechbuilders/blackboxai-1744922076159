@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="icon" type="image/x-icon" href="https://www.apple.com/favicon.ico">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - SF Pro Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                    colors: {
+                        'apple-gray': '#1d1d1f',
+                        'apple-blue': '#2997FF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-apple-gray">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-black/95 backdrop-blur-md z-50">
+        <nav class="max-w-[980px] mx-auto px-6 h-12 flex items-center justify-between text-sm font-light tracking-wide">
+            <a href="#" class="text-white"><i class="fab fa-apple text-xl"></i></a>
+            <div class="hidden md:flex space-x-8 text-white">
+                <a href="#" class="hover:text-white/80">Store</a>
+                <a href="#" class="hover:text-white/80">Mac</a>
+                <a href="#" class="hover:text-white/80">iPad</a>
+                <a href="#" class="hover:text-white/80">iPhone</a>
+                <a href="#" class="hover:text-white/80">Watch</a>
+                <a href="#" class="hover:text-white/80">Vision</a>
+                <a href="#" class="hover:text-white/80">AirPods</a>
+                <a href="#" class="hover:text-white/80">TV & Home</a>
+                <a href="#" class="hover:text-white/80">Entertainment</a>
+                <a href="#" class="hover:text-white/80">Accessories</a>
+                <a href="#" class="hover:text-white/80">Support</a>
+            </div>
+            <button class="md:hidden text-white">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-12">
+        <!-- iPhone 16 Pro Hero Section -->
+        <section class="relative h-[600px] bg-black text-white text-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent z-10"></div>
+            <div class="pt-24 space-y-3 relative z-20">
+                <h2 class="text-6xl font-semibold">iPhone 16 Pro</h2>
+                <p class="text-2xl font-light">Built for Apple Intelligence.</p>
+                <div class="space-x-8 mt-6">
+                    <a href="#" class="text-apple-blue hover:underline text-xl">Learn more ></a>
+                    <a href="#" class="text-apple-blue hover:underline text-xl">Buy ></a>
+                </div>
+            </div>
+            <img src="https://images.pexels.com/photos/5750001/pexels-photo-5750001.jpeg" 
+                 alt="iPhone 16 Pro" 
+                 class="absolute inset-0 w-full h-full object-cover object-center -z-10">
+        </section>
+
+        <!-- MacBook Pro Section -->
+        <section class="relative h-[600px] bg-[#fafafa] text-apple-gray text-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#fafafa]/40 to-transparent z-10"></div>
+            <div class="pt-24 space-y-3 relative z-20">
+                <h2 class="text-6xl font-semibold">MacBook Pro</h2>
+                <p class="text-2xl font-light">A work of smart.</p>
+                <div class="space-x-8 mt-6">
+                    <a href="#" class="text-apple-blue hover:underline text-xl">Learn more ></a>
+                    <a href="#" class="text-apple-blue hover:underline text-xl">Buy ></a>
+                </div>
+            </div>
+            <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg" 
+                 alt="MacBook Pro" 
+                 class="absolute inset-0 w-full h-full object-cover object-center -z-10">
+        </section>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 px-3">
+            <!-- iPhone 16 -->
+            <section class="relative h-[580px] bg-[#fafafa] text-apple-gray text-center rounded-3xl overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#fafafa]/40 to-transparent z-10"></div>
+                <div class="pt-20 space-y-3 relative z-20">
+                    <h2 class="text-5xl font-semibold">iPhone 16</h2>
+                    <p class="text-xl font-light">Built for Apple Intelligence.</p>
+                    <div class="space-x-6 mt-4">
+                        <a href="#" class="text-apple-blue hover:underline text-lg">Learn more ></a>
+                        <a href="#" class="text-apple-blue hover:underline text-lg">Buy ></a>
+                    </div>
+                </div>
+                <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg" 
+                     alt="iPhone 16" 
+                     class="absolute inset-0 w-full h-full object-cover object-center -z-10">
+            </section>
+
+            <!-- MacBook Air -->
+            <section class="relative h-[580px] bg-[#fafafa] text-apple-gray text-center rounded-3xl overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#fafafa]/40 to-transparent z-10"></div>
+                <div class="pt-20 space-y-3 relative z-20">
+                    <h2 class="text-5xl font-semibold">MacBook Air</h2>
+                    <p class="text-xl font-light">Sky blue color.<br>Sky high performance with M4.</p>
+                    <div class="space-x-6 mt-4">
+                        <a href="#" class="text-apple-blue hover:underline text-lg">Learn more ></a>
+                        <a href="#" class="text-apple-blue hover:underline text-lg">Buy ></a>
+                    </div>
+                </div>
+                <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" 
+                     alt="MacBook Air" 
+                     class="absolute inset-0 w-full h-full object-cover object-center -z-10">
+            </section>
+        </div>
+
+        <!-- Apple TV+ Section -->
+        <section class="bg-black text-white py-20 mt-12">
+            <div class="max-w-[980px] mx-auto px-6">
+                <div class="flex items-center gap-3 mb-12">
+                    <i class="fab fa-apple text-xl"></i>
+                    <span class="text-2xl">tv+</span>
+                    <h2 class="text-4xl font-semibold">Originals</h2>
+                </div>
+                <div class="overflow-x-auto pb-6">
+                    <div class="flex space-x-6 min-w-max">
+                        <!-- TV Show Cards -->
+                        <div class="flex-none w-80 group">
+                            <div class="rounded-2xl overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
+                                <img src="https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg" 
+                                     alt="TV Show 1" 
+                                     class="w-full h-48 object-cover">
+                                <div class="p-6 bg-[#1d1d1f]">
+                                    <p class="text-sm text-gray-400 mb-2">Drama</p>
+                                    <h3 class="text-lg font-semibold mb-3">Live your best lie.</h3>
+                                    <a href="#" class="inline-flex items-center text-apple-blue hover:underline">
+                                        Stream now 
+                                        <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-none w-80 group">
+                            <div class="rounded-2xl overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
+                                <img src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg" 
+                                     alt="TV Show 2" 
+                                     class="w-full h-48 object-cover">
+                                <div class="p-6 bg-[#1d1d1f]">
+                                    <p class="text-sm text-gray-400 mb-2">Comedy</p>
+                                    <h3 class="text-lg font-semibold mb-3">The Studio</h3>
+                                    <a href="#" class="inline-flex items-center text-apple-blue hover:underline">
+                                        Stream now 
+                                        <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-none w-80 group">
+                            <div class="rounded-2xl overflow-hidden transform transition-transform duration-300 group-hover:scale-105">
+                                <img src="https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg" 
+                                     alt="TV Show 3" 
+                                     class="w-full h-48 object-cover">
+                                <div class="p-6 bg-[#1d1d1f]">
+                                    <p class="text-sm text-gray-400 mb-2">Thriller</p>
+                                    <h3 class="text-lg font-semibold mb-3">Severance</h3>
+                                    <a href="#" class="inline-flex items-center text-apple-blue hover:underline">
+                                        Stream now 
+                                        <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#f5f5f7] text-[#6e6e73] py-12">
+            <div class="max-w-[980px] mx-auto px-6">
+                <div class="border-b border-[#d2d2d7] pb-8 mb-8">
+                    <p class="text-xs leading-relaxed">
+                        1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple's trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                    <div>
+                        <h3 class="font-medium text-sm mb-4">Shop and Learn</h3>
+                        <ul class="space-y-2.5 text-xs">
+                            <li><a href="#" class="hover:underline">Store</a></li>
+                            <li><a href="#" class="hover:underline">Mac</a></li>
+                            <li><a href="#" class="hover:underline">iPad</a></li>
+                            <li><a href="#" class="hover:underline">iPhone</a></li>
+                            <li><a href="#" class="hover:underline">Watch</a></li>
+                            <li><a href="#" class="hover:underline">Vision</a></li>
+                            <li><a href="#" class="hover:underline">AirPods</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-medium text-sm mb-4">Services</h3>
+                        <ul class="space-y-2.5 text-xs">
+                            <li><a href="#" class="hover:underline">Apple Music</a></li>
+                            <li><a href="#" class="hover:underline">Apple TV+</a></li>
+                            <li><a href="#" class="hover:underline">Apple Fitness+</a></li>
+                            <li><a href="#" class="hover:underline">Apple News+</a></li>
+                            <li><a href="#" class="hover:underline">Apple Arcade</a></li>
+                            <li><a href="#" class="hover:underline">iCloud</a></li>
+                            <li><a href="#" class="hover:underline">Apple One</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-medium text-sm mb-4">Apple Store</h3>
+                        <ul class="space-y-2.5 text-xs">
+                            <li><a href="#" class="hover:underline">Find a Store</a></li>
+                            <li><a href="#" class="hover:underline">Genius Bar</a></li>
+                            <li><a href="#" class="hover:underline">Today at Apple</a></li>
+                            <li><a href="#" class="hover:underline">Apple Camp</a></li>
+                            <li><a href="#" class="hover:underline">Apple Store App</a></li>
+                            <li><a href="#" class="hover:underline">Certified Refurbished</a></li>
+                            <li><a href="#" class="hover:underline">Apple Trade In</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-medium text-sm mb-4">For Business</h3>
+                        <ul class="space-y-2.5 text-xs">
+                            <li><a href="#" class="hover:underline">Apple and Business</a></li>
+                            <li><a href="#" class="hover:underline">Shop for Business</a></li>
+                        </ul>
+                        
+                        <h3 class="font-medium text-sm mb-4 mt-8">For Education</h3>
+                        <ul class="space-y-2.5 text-xs">
+                            <li><a href="#" class="hover:underline">Apple and Education</a></li>
+                            <li><a href="#" class="hover:underline">Shop for K-12</a></li>
+                            <li><a href="#" class="hover:underline">Shop for College</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-medium text-sm mb-4">Apple Values</h3>
+                        <ul class="space-y-2.5 text-xs">
+                            <li><a href="#" class="hover:underline">Accessibility</a></li>
+                            <li><a href="#" class="hover:underline">Education</a></li>
+                            <li><a href="#" class="hover:underline">Environment</a></li>
+                            <li><a href="#" class="hover:underline">Inclusion and Diversity</a></li>
+                            <li><a href="#" class="hover:underline">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-[#d2d2d7] text-xs">
+                    <p class="mb-2">More ways to shop: <a href="#" class="text-apple-blue hover:underline">Find an Apple Store</a> or <a href="#" class="text-apple-blue hover:underline">other retailer</a> near you.</p>
+                    <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
